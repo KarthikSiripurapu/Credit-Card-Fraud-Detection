@@ -31,7 +31,7 @@
 
 # Dataset
 
- Dataset used - Credit card fraud detection (Kaggle) 
+ Dataset used - Credit card fraud detection (Kaggle) - https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
  
   1.V1 to V28 - anonymized transaction features
     (V1 to V28 are anonymized features created using PCA (Principal Component Analysis) from the original credit card transaction data.)
