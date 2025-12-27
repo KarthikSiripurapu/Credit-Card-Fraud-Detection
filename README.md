@@ -5,7 +5,9 @@
 # In Real-Time
 
  1.Users enters transaction details.
+ 
  2.ML model predicts Fraud/Not Fraud.
+ 
  3.Used by Banks and Gateways.
 
 # Features
