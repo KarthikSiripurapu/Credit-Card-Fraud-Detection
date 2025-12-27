@@ -33,7 +33,7 @@
 
  Dataset used - Credit card fraud detection (Kaggle) 
  
-  1.V1 to V28 - transaction features
+  1.V1 to V28 - anonymized transaction features
   
   2.Amount - transaction amount
   
