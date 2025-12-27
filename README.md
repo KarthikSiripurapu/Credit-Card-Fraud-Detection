@@ -19,7 +19,9 @@
 # Problem Type
 
  * Binary Classification
+   
  * Output :
+  
    0 - Legitimate
    1 - Fraud
 
@@ -30,6 +32,9 @@
 # Dataset
 
  Dataset used - Credit card fraud detection (Kaggle) 
+ 
   1.V1 to V28 - transaction features
+  
   2.Amount - transaction amount
+  
   3.Class - target (0-legit , 1-fraud)
