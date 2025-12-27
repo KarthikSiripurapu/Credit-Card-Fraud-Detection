@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Fraud Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            padding: 40px;
+        }
+        .container {
+            width: 350px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px black;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        h3 {
+            text-align: center;
+        }
+        .result {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Credit Card Fraud Detection</h3>
+
+        <form method="POST">
+            <input type="number" step="any" name="v1" placeholder="V1 (Anonymized features)" required>
+            <input type="number" step="any" name="v2" placeholder="V2" required>
+            <input type="number" step="any" name="v3" placeholder="V3" required>
+            <input type="number" step="any" name="amount" placeholder="Amount" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            {{ prediction }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
