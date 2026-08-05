@@ -1,41 +1,105 @@
-# Credit-Card-Fraud-Detection
+# Credit Card Fraud Detection Web Application
 
- A machine learning system that predicts whether a credit card transaction is Fraudulent or Legitimate based on transaction details.
+A machine learning web application that predicts whether a credit card transaction is **Fraudulent** or **Legitimate** using a trained Logistic Regression model. The application provides real-time predictions through a Flask-based web interface.
 
-# In Real-Time
+---
 
- 1.Users enters transaction details.
- 
- 2.ML model predicts Fraud/Not Fraud.
- 
- 3.Used by Banks and Gateways.
+## Technologies Used
 
-# Features
- - Data preprocessing
- - Handling imbalanced data
- - Model training & evaluation
- - Flask-based real-time prediction
+- Python
+- NumPy
+- Pandas
+- Scikit-Learn
+- Flask
+- HTML/CSS
+- Pickle
 
-# Problem Type
+---
 
- * Binary Classification
-   
- * Output :
-  
-   0 - Legitimate
-   1 - Fraud
+## Features
 
-# Algorithm Used
+- Data preprocessing and cleaning
+- Handling imbalanced transaction data
+- Logistic Regression model training
+- Model evaluation
+- Model serialization using Pickle
+- Real-time fraud prediction using Flask
+- User-friendly web interface
 
- - LOGISTIC REGRESSION
+---
 
-# Dataset
+## Workflow
 
- Dataset used - Credit card fraud detection (Kaggle) - https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
- 
-  1.V1 to V28 - anonymized transaction features
-    (V1 to V28 are anonymized features created using PCA (Principal Component Analysis) from the original credit card transaction data.)
-  
-  2.Amount - transaction amount
-  
-  3.Class - target (0-legit , 1-fraud)
+1. Data Collection
+2. Data Preprocessing
+3. Exploratory Data Analysis (EDA)
+4. Feature Selection
+5. Model Training
+6. Model Evaluation
+7. Save Trained Model
+8. Flask-based Real-Time Prediction
+
+---
+
+## Problem Statement
+
+Credit card fraud causes significant financial losses every year. This project uses machine learning to classify a transaction as **Fraudulent** or **Legitimate** based on transaction features.
+
+---
+
+## Model
+
+**Algorithm Used**
+
+- Logistic Regression
+
+**Problem Type**
+
+- Binary Classification
+
+**Prediction Output**
+
+- **0** → Legitimate Transaction
+- **1** → Fraudulent Transaction
+
+---
+
+## Dataset
+
+**Credit Card Fraud Detection Dataset (Kaggle)**
+
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+### Dataset Features
+
+- **V1 – V28** : Anonymized transaction features generated using PCA.
+- **Amount** : Transaction amount.
+- **Class** : Target variable
+  - 0 → Legitimate
+  - 1 → Fraudulent
+
+---
+
+## Application Workflow
+
+1. User enters transaction details through the web interface.
+2. Flask receives the input.
+3. Transaction data is preprocessed.
+4. The trained Logistic Regression model predicts the probability of fraud.
+5. The application displays whether the transaction is **Fraudulent** or **Legitimate**, along with a risk score.
+
+---
+
+## Future Improvements
+
+- Hyperparameter tuning
+- Additional machine learning models
+- REST API endpoints
+- Docker containerization
+- Cloud deployment
+
+---
+
+## Author
+
+**Karthik Siripurapu**
